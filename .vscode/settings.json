@@ -1,5 +1,7 @@
 {
   "cSpell.words": [
     "neighbourhood"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "javascript.suggest.autoImports": true,
 }
