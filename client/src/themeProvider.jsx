@@ -1,5 +1,4 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Button from "@mui/material/Button";
+import { createTheme } from "@mui/material/styles";
 
 // Create a custom theme
 const theme = createTheme({
@@ -13,13 +12,4 @@ const theme = createTheme({
   },
 });
 
-function CustomThemeExample() {
-  return (
-    <ThemeProvider theme={theme}>
-      <Button color="primary">Primary Button</Button>
-      <Button color="secondary">Secondary Button</Button>
-    </ThemeProvider>
-  );
-}
-
-export default CustomThemeExample;
+export default theme;

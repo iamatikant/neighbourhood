@@ -1,25 +1,25 @@
 import "./App.css";
+import "./component.css";
 import LandingPage from "./components/LandingPage";
-import { createTheme } from "@mui/material";
-import { ThemeProvider } from "@emotion/react";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#1a237e", // Your primary color
-    },
-    secondary: {
-      main: "#ff6f00", // Your secondary color
-    },
-  },
-});
+// eslint-disable-next-line react-refresh/only-export-components
+// export const themeOptions = {
+//   palette: {
+//     mode: "light",
+//     primary: {
+//       main: "#DA7B93",
+//     },
+//     secondary: {
+//       main: "#9c27b0",
+//     },
+//   },
+// };
+// const theme = createTheme(themeOptions);
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <LandingPage />
-      </ThemeProvider>
+      <LandingPage />
     </>
   );
 }
